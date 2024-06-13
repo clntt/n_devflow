@@ -59,15 +59,15 @@ async function Home ()  {
             { result?.questions?.length > 0 
             ? result?.questions?.map((question) => (
                 <QuestionCard 
-                  key={question._id}
-                  _id={question._id}
-                  title={question.title}
-                  author={question.author}
-                  answers={question.answers}
-                  upVotes={formatNumber(question.upVotes)}
-                  views={question.views}
-                  createdAt={question.createdAt}
-                  tags={question.tags}
+                  key={question?._id}
+                  _id={question?._id}
+                  title={question?.title}
+                  author={question?.author}
+                  answers={question?.answers}
+                  upVotes={formatNumber(question?.upVotes)}
+                  views={question?.views}
+                  createdAt={question?.createdAt}
+                  tags={question?.tags}
                 />
             )) 
             : (
