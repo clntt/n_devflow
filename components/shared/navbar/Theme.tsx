@@ -34,7 +34,7 @@ const Theme = () => {
                       alt='moon'
                       width={20}
                       height={20}
-                      classame='active-theme'
+                      className='active-theme'
                     />
                 ) }
               </MenubarTrigger>
