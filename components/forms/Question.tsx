@@ -55,13 +55,13 @@ const Question = ({ mongoUserId } : Props) => {
         console.log('Form values', values);
 
         try {
-            await createQuestion({
-                title : values.title,
-                explanation : values.explanation,
-                tags : values.tags,
-                author : JSON.parse(mongoUserId),
-                path : pathname
-            })
+            // await createQuestion({
+            //     title : values.title,
+            //     explanation : values.explanation,
+            //     tags : values!.tags,
+            //     author : JSON.parse(mongoUserId),
+            //     path : pathname
+            // })
 
 
             router.push('/');
