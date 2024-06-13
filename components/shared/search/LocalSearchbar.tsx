@@ -16,7 +16,7 @@ interface CustomInputProps {
 const LocalSearchbar = ({ imgSrc, placeholder, otherClasses, route, iconPosition } : CustomInputProps) => {
   return (
     <div className={`background-light800_darkgradient flex min-h-[56px] grow items-center gap-4 rounded-[10px] px-4 ${otherClasses}`}>
-       {iconPosition === 'left' && (
+       {/* {iconPosition === 'left' && (
          <Image 
            imgSrc={imgSrc}
            alt='search-icon'
@@ -24,7 +24,7 @@ const LocalSearchbar = ({ imgSrc, placeholder, otherClasses, route, iconPosition
            height={24}
            className='cursor-pointer'
           />
-       )}
+       )} */}
 
        <Input 
          type='text'
