@@ -81,12 +81,12 @@ const Question = ({ mongoUserId } : Props) => {
             const tagValue = tagInput.value.trim();
 
             if(tagValue !== '') {
-                if(tagValue.length > 15) {
-                    return form.setError('tags', {
-                        type : 'required',
-                        message : 'Tag must be less than 15 characters.'
-                    })
-                }
+                // if(tagValue.length > 15) {
+                //     return form.setError('tags', {
+                //         type : 'required',
+                //         message : 'Tag must be less than 15 characters.'
+                //     })
+                // }
 
                 if(!field.value.includes(tagValue as never)) {
                     form.setValue('tags', [...field.value, tagValue]);
