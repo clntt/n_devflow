@@ -1,15 +1,12 @@
 import React from 'react';
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
+
 } from '@clerk/nextjs'
 import './globals.css';
 
 import { Inter, Space_Grotesk } from 'next/font/google';
-import type { Metadata } from 'react';
+import { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/context/ThemeProvider';
 
