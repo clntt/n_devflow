@@ -163,7 +163,7 @@ const Question = ({ mongoUserId } : Props) => {
             )}
             />
 
-             <FormField
+             {/* <FormField
             control={form.control}
             name="tags"
             render={({ field }) => (
@@ -210,7 +210,7 @@ const Question = ({ mongoUserId } : Props) => {
                 <FormMessage className='text-red-500'/>
                 </FormItem>
             )}
-            />
+            /> */}
             <Button 
               type="submit" 
               disabled={isSubmitting}
