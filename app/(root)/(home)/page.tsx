@@ -16,7 +16,7 @@ async function Home ()  {
 
 
   const result = await getQuestions({});
-  // console.log(result?.questions);
+  // console.log(result?.questions!;
 
 
  
@@ -56,18 +56,18 @@ async function Home ()  {
           <HomeFilters />
 
           <div className='mt-10 flex w-full flex-col gap-6'>
-            { result?.questions?.length > 0 
-            ? result?.questions?.map((question) => (
+            { result!.questions!.length > 0 
+            ? result!.questions!.map((question : any) => (
                 <QuestionCard 
-                  key={question?._id}
-                  _id={question?._id}
-                  title={question?.title}
-                  author={question?.author}
-                  answers={question?.answers}
-                  upVotes={formatNumber(question?.upVotes)}
-                  views={question?.views}
-                  createdAt={question?.createdAt}
-                  tags={question?.tags}
+                  key={question!._id}
+                  _id={question!._id}
+                  title={question!.title}
+                  author={question!.author}
+                  answers={question!.answers}
+                  upVotes={formatNumber(question!.upVotes)}
+                  views={question!.views}
+                  createdAt={question!.createdAt}
+                  tags={question!.tags}
                 />
             )) 
             : (
