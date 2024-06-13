@@ -46,7 +46,7 @@ const Question = ({ mongoUserId } : Props) => {
         defaultValues: {
           title: "",
           explanation: "",
-          tags: [],
+        //   tags: [],
         },
     });
     
