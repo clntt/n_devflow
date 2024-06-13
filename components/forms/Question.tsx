@@ -88,11 +88,11 @@ const Question = ({ mongoUserId } : Props) => {
                 //     })
                 // }
 
-                if(!field.value.includes(tagValue as never)) {
-                    form.setValue('tags', [...field.value, tagValue]);
-                    tagInput.value = ''
-                    form.clearErrors('tags')
-                }
+                // if(!field.value.includes(tagValue as never)) {
+                //     form.setValue('tags', [...field.value, tagValue]);
+                //     tagInput.value = ''
+                //     form.clearErrors('tags')
+                // }
             } else {
                 form.trigger();
             }
