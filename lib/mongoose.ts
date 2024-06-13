@@ -28,8 +28,8 @@ export const connectToDatabase = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URL, {
             dbName : 'ndevflow',
-            useNewUrlParser : true,
-            useUnifiedTopology : true,
+            // useNewUrlParser : true,
+            // useUnifiedTopology : true,
         })
 
         isConnected = true;
