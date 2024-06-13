@@ -7,8 +7,6 @@ import {
     MenubarContent,
     MenubarItem,
     MenubarMenu,
-    MenubarSeparator,
-    MenubarShortcut,
     MenubarTrigger,
   } from "@/components/ui/menubar"
   
@@ -27,7 +25,7 @@ const Theme = () => {
                       alt='sun'
                       width={20}
                       height={20}
-                      classame='active-theme'
+                      className='active-theme'
                     />
                     
                 ) : (
